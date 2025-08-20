@@ -1,180 +1,69 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>3D Mangue – Impressões 3D sob medida</title>
-  <meta name="description" content="Impressões 3D sob medida no Recife: suportes, organizadores e miniaturas. Peça já o seu!" />
-  <meta property="og:title" content="3D Mangue – Impressões 3D sob medida" />
-  <meta property="og:description" content="Suportes, organizadores e miniaturas impressos em 3D. Peça o seu por Telegram, Instagram ou e-mail." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.jpg" />
-  <meta name="theme-color" content="#111827" />
-  <!-- Tailwind via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .watermark::before {
-      content:"3D MANGUE";
-      position:absolute;
-      inset:auto auto 10% 50%;
-      transform:translateX(-50%) rotate(-12deg);
-      font-weight:800;
-      font-size:7rem;
-      letter-spacing:.2em;
-      opacity:.04;
-      pointer-events:none;
-    }
-  </style>
-</head>
-<body class="bg-neutral-950 text-neutral-100 antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-30 backdrop-blur bg-neutral-950/70 border-b border-neutral-800">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold tracking-wide">3D Mangue</a>
-      <nav class="hidden sm:flex items-center gap-6 text-sm">
-        <a href="#produtos" class="hover:text-white/90 text-white/80">Produtos</a>
-        <a href="#sobre" class="hover:text-white/90 text-white/80">Sobre</a>
-        <a href="#contato" class="px-3 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-neutral-900 font-semibold">Fale Conosco</a>
-      </nav>
-    </div>
-  </header>
+<!-- Contato (versão premium) -->
+<section id="contato" class="border-t border-neutral-800">
+  <div class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold">Peça já o seu</h2>
+    <p class="mt-2 text-white/80">Preferências, medidas e prazos — respondemos rapidinho.</p>
 
-  <!-- Hero -->
-  <section class="relative watermark">
-    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Impressões 3D sob medida<br><span class="text-emerald-400">pra organizar e destacar</span></h1>
-        <p class="mt-4 text-white/80">Suportes, organizadores e miniaturas com acabamento premium. Escolha a cor, envie medidas e receba rápido.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#produtos" class="px-5 py-3 rounded-xl bg-white text-neutral-900 font-semibold hover:bg-white/90">Ver produtos</a>
-          <a href="#contato" class="px-5 py-3 rounded-xl ring-1 ring-white/20 hover:ring-white/40">Pedir orçamento</a>
+    <div class="mt-6 grid sm:grid-cols-3 gap-5">
+      <!-- Telegram -->
+      <a href="https://t.me/mangue3d" target="_blank"
+         class="group relative rounded-2xl p-[1px] bg-gradient-to-br from-emerald-500/40 via-emerald-400/20 to-transparent hover:from-emerald-400/70 hover:via-emerald-300/30 transition">
+        <div class="rounded-2xl p-5 bg-neutral-950/60 border border-neutral-800 backdrop-blur">
+          <div class="flex items-center gap-3">
+            <!-- ícone Telegram -->
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-500/15 ring-1 ring-emerald-400/30">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" class="opacity-90">
+                <path fill="currentColor" d="M9.2 16.2 9 19a1 1 0 0 0 1.6.8l2.3-1.7 3.9 2.8a1 1 0 0 0 1.6-.6l3.5-14.7a1 1 0 0 0-1.3-1.2L2.6 9.6a1 1 0 0 0 .1 1.9l4.8 1.5 11.2-7.1-9.5 9.4z"/>
+              </svg>
+            </span>
+            <div>
+              <div class="text-sm text-emerald-300">Telegram</div>
+              <div class="text-lg font-semibold tracking-tight">t.me/mangue3d</div>
+              <div class="text-white/60 text-sm">Clique para conversar</div>
+            </div>
+          </div>
         </div>
-        <p class="mt-3 text-xs text-white/50">Atendimento via Telegram, Instagram ou e-mail.</p>
-      </div>
-      <div class="relative">
-        <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 border border-neutral-800 shadow-2xl"></div>
-        <p class="mt-3 text-sm text-white/60">Espaço para uma foto bonita de destaque do seu trabalho.</p>
-      </div>
-    </div>
-  </section>
+      </a>
 
-  <!-- Produtos -->
-  <section id="produtos" class="border-t border-neutral-800">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="text-2xl md:text-3xl font-bold">Produtos em destaque</h2>
-        <a href="#contato" class="text-emerald-400 hover:text-emerald-300 text-sm">Não achou o que quer? Fale com a gente →</a>
-      </div>
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <article class="group rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition">
-          <div class="aspect-[4/3] bg-neutral-800"></div>
-          <div class="p-4">
-            <h3 class="font-semibold group-hover:text-white">Suporte de tomada p/ Echo Dot 5</h3>
-            <p class="mt-1 text-sm text-white/70">Instalação direta na tomada, com duto de cabo e visual limpo.</p>
-            <div class="mt-4 flex items-center justify-between">
-              <span class="text-white/70 text-sm">Cores sob demanda</span>
-              <a href="#contato" class="text-emerald-400 hover:text-emerald-300 text-sm font-medium">Pedir agora</a>
+      <!-- Instagram (DM direta) -->
+      <a href="https://ig.me/m/3dmangue" target="_blank"
+         class="group relative rounded-2xl p-[1px] bg-gradient-to-br from-pink-500/40 via-fuchsia-400/20 to-transparent hover:from-pink-500/70 hover:via-fuchsia-300/30 transition">
+        <div class="rounded-2xl p-5 bg-neutral-950/60 border border-neutral-800 backdrop-blur">
+          <div class="flex items-center gap-3">
+            <!-- ícone Instagram -->
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-pink-500/15 ring-1 ring-pink-400/30">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="opacity-90">
+                <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm6.25-2.75a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z"/>
+              </svg>
+            </span>
+            <div>
+              <div class="text-sm text-pink-300">Instagram</div>
+              <div class="text-lg font-semibold tracking-tight">@3dmangue</div>
+              <div class="text-white/60 text-sm">Abrir DM agora</div>
             </div>
           </div>
-        </article>
-        <!-- Card 2 -->
-        <article class="group rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition">
-          <div class="aspect-[4/3] bg-neutral-800"></div>
-          <div class="p-4">
-            <h3 class="font-semibold group-hover:text-white">Organizador de banheiro</h3>
-            <p class="mt-1 text-sm text-white/70">Prateleiras e suportes modulares que cabem certinho no seu espaço.</p>
-            <div class="mt-4 flex items-center justify-between">
-              <span class="text-white/70 text-sm">Sob medida</span>
-              <a href="#contato" class="text-emerald-400 hover:text-emerald-300 text-sm font-medium">Pedir agora</a>
+        </div>
+      </a>
+
+      <!-- E-mail -->
+      <a href="mailto:3dmangue@gmail.com?subject=Or%C3%A7amento%20-%203D%20Mangue"
+         class="group relative rounded-2xl p-[1px] bg-gradient-to-br from-sky-500/40 via-sky-400/20 to-transparent hover:from-sky-500/70 hover:via-sky-300/30 transition">
+        <div class="rounded-2xl p-5 bg-neutral-950/60 border border-neutral-800 backdrop-blur">
+          <div class="flex items-center gap-3">
+            <!-- ícone e-mail -->
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-sky-500/15 ring-1 ring-sky-400/30">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="opacity-90">
+                <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v.3l10 6.2 10-6.2V6a2 2 0 0 0-2-2zm0 5.1-8.8 5.5a1 1 0 0 1-1 0L2 9.1V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9.1z"/>
+              </svg>
+            </span>
+            <div>
+              <div class="text-sm text-sky-300">E-mail</div>
+              <div class="text-lg font-semibold tracking-tight">3dmangue@gmail.com</div>
+              <div class="text-white/60 text-sm">Clique para abrir seu e-mail</div>
             </div>
           </div>
-        </article>
-        <!-- Card 3 -->
-        <article class="group rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition">
-          <div class="aspect-[4/3] bg-neutral-800"></div>
-          <div class="p-4">
-            <h3 class="font-semibold group-hover:text-white">Miniaturas e colecionáveis</h3>
-            <p class="mt-1 text-sm text-white/70">Peças com alto nível de detalhe, ideal para presentear ou decorar.</p>
-            <div class="mt-4 flex items-center justify-between">
-              <span class="text-white/70 text-sm">Várias escalas</span>
-              <a href="#contato" class="text-emerald-400 hover:text-emerald-300 text-sm font-medium">Pedir agora</a>
-            </div>
-          </div>
-        </article>
-      </div>
+        </div>
+      </a>
     </div>
-  </section>
-
-  <!-- Sobre -->
-  <section id="sobre" class="border-t border-neutral-800">
-    <div class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold">Qualidade de estúdio, preço justo</h2>
-        <p class="mt-3 text-white/80">Trabalhamos com filamentos premium e calibragem fina para peças resistentes e bem acabadas. Fazemos personalização de medidas, cores e logos.</p>
-        <ul class="mt-5 grid gap-2 text-white/80 text-sm">
-          <li>• Orçamentos rápidos (envie medidas/fotos)</li>
-          <li>• Pagamento via Pix e cartão</li>
-          <li>• Entrega local e envio nacional</li>
-        </ul>
-      </div>
-      <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6">
-        <h3 class="font-semibold">Perguntas frequentes</h3>
-        <details class="mt-3 border-t border-neutral-800 py-3">
-          <summary class="cursor-pointer text-white/80">Como faço o pedido?</summary>
-          <p class="mt-2 text-sm text-white/70">Fale com a gente pelo Telegram, Instagram ou e-mail. Envie referência e medidas; retornamos com orçamento e prazo.</p>
-        </details>
-        <details class="border-t border-neutral-800 py-3">
-          <summary class="cursor-pointer text-white/80">Quais cores e materiais?</summary>
-          <p class="mt-2 text-sm text-white/70">PLA e PETG nas cores padrão; sob consulta, materiais especiais (ASA, flexível).</p>
-        </details>
-        <details class="border-t border-neutral-800 py-3">
-          <summary class="cursor-pointer text-white/80">Como funciona o frete?</summary>
-          <p class="mt-2 text-sm text-white/70">Retirada local em Recife ou envio pelos Correios/transportadora. Calculamos no orçamento.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="border-t border-neutral-800">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-      <h2 class="text-2xl md:text-3xl font-bold">Peça já o seu</h2>
-      <p class="mt-2 text-white/80">Preferências, medidas e prazos — respondemos rapidinho.</p>
-      <div class="mt-6 grid sm:grid-cols-3 gap-4">
-        <a href="https://t.me/mangue3d" class="block rounded-2xl p-4 border border-emerald-700/40 bg-emerald-900/20 hover:bg-emerald-900/30">
-          <div class="text-sm text-emerald-300">Telegram</div>
-          <div class="text-lg font-semibold">t.me/mangue3d</div>
-          <div class="text-white/60 text-sm">Clique para conversar</div>
-        </a>
-        <a href="https://instagram.com/3dmangue" target="_blank" class="block rounded-2xl p-4 border border-neutral-800 hover:bg-neutral-900/40">
-          <div class="text-sm text-pink-400">Instagram</div>
-          <div class="text-lg font-semibold">@3dmangue</div>
-          <div class="text-white/60 text-sm">Siga nosso perfil</div>
-        </a>
-        <a href="mailto:3dmangue@gmail.com?subject=Or%C3%A7amento%20-%203D%20Mangue" class="block rounded-2xl p-4 border border-neutral-800 hover:bg-neutral-900/40">
-          <div class="text-sm text-white/60">E-mail</div>
-          <div class="text-lg font-semibold">3dmangue@gmail.com</div>
-          <div class="text-white/60 text-sm">Clique para abrir seu e-mail</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-neutral-800">
-    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-white/60 flex flex-col md:flex-row items-center justify-between gap-4">
-      <div>© <span id="y"></span> 3D Mangue. Todos os direitos reservados.</div>
-      <div class="flex items-center gap-3">
-        <a href="https://instagram.com/3dmangue" target="_blank" class="hover:text-white">Instagram</a>
-        <span class="opacity-30">•</span>
-        <a href="https://t.me/mangue3d" target="_blank" class="hover:text-white">Telegram</a>
-        <span class="opacity-30">•</span>
-        <a href="mailto:3dmangue@gmail.com" class="hover:text-white">E-mail</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</body>
-</html>
+  </div>
+</section>
