@@ -12,6 +12,10 @@
   <meta name="theme-color" content="#111827" />
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Mantém altura estável dos carrosseis (4:3) */
+    .ar-4-3 { aspect-ratio: 4 / 3; }
+  </style>
 </head>
 <body class="bg-neutral-950 text-neutral-100 antialiased">
 
@@ -44,7 +48,7 @@
 
       <!-- Carrossel -->
       <div class="relative rounded-2xl border border-neutral-800 overflow-hidden">
-        <div id="carousel" class="relative">
+        <div id="carousel" class="relative w-full ar-4-3">
           <img class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-500 w-full h-full object-cover"
                src="assets/echo-dot-suporte.jpg" alt="Suporte de tomada para Echo Dot 5" />
           <img class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500 w-full h-full object-cover"
@@ -71,10 +75,10 @@
 
         <!-- Card 1: Echo Dot -->
         <article class="group rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition">
-          <div class="relative aspect-[4/3] bg-neutral-800 overflow-hidden" data-carousel="card">
-            <img class="card-slide w-full h-full object-cover opacity-100 transition-opacity duration-500" src="assets/echo-dot-suporte.jpg" alt="Suporte Echo Dot — foto 1">
-            <img class="card-slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-500" src="assets/echo-dot-suporte-2.jpg" alt="Suporte Echo Dot — foto 2">
-            <img class="card-slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-500" src="assets/echo-dot-suporte-3.jpg" alt="Suporte Echo Dot — foto 3">
+          <div class="relative ar-4-3 bg-neutral-800 overflow-hidden" data-carousel="card">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500" src="assets/echo-dot-suporte.jpg" alt="Suporte Echo Dot — foto 1">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="assets/echo-dot-suporte-2.jpg" alt="Suporte Echo Dot — foto 2">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="assets/echo-dot-suporte-3.jpg" alt="Suporte Echo Dot — foto 3">
             <button class="card-prev absolute left-2 top-1/2 -translate-y-1/2 bg-neutral-900/70 hover:bg-neutral-900/90 border border-white/10 rounded-full w-8 h-8">‹</button>
             <button class="card-next absolute right-2 top-1/2 -translate-y-1/2 bg-neutral-900/70 hover:bg-neutral-900/90 border border-white/10 rounded-full w-8 h-8">›</button>
             <div class="card-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2"></div>
@@ -91,10 +95,10 @@
 
         <!-- Card 2: Organizador -->
         <article class="group rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition">
-          <div class="relative aspect-[4/3] bg-neutral-800 overflow-hidden" data-carousel="card">
-            <img class="card-slide w-full h-full object-cover opacity-100 transition-opacity duration-500" src="assets/organizador-banheiro.jpg" alt="Organizador — foto 1">
-            <img class="card-slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-500" src="assets/organizador-banheiro-2.jpg" alt="Organizador — foto 2">
-            <img class="card-slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-500" src="assets/organizador-banheiro-3.jpg" alt="Organizador — foto 3">
+          <div class="relative ar-4-3 bg-neutral-800 overflow-hidden" data-carousel="card">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500" src="assets/organizador-banheiro.jpg" alt="Organizador — foto 1">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="assets/organizador-banheiro-2.jpg" alt="Organizador — foto 2">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="assets/organizador-banheiro-3.jpg" alt="Organizador — foto 3">
             <button class="card-prev absolute left-2 top-1/2 -translate-y-1/2 bg-neutral-900/70 hover:bg-neutral-900/90 border border-white/10 rounded-full w-8 h-8">‹</button>
             <button class="card-next absolute right-2 top-1/2 -translate-y-1/2 bg-neutral-900/70 hover:bg-neutral-900/90 border border-white/10 rounded-full w-8 h-8">›</button>
             <div class="card-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2"></div>
@@ -111,10 +115,10 @@
 
         <!-- Card 3: Miniaturas -->
         <article class="group rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition">
-          <div class="relative aspect-[4/3] bg-neutral-800 overflow-hidden" data-carousel="card">
-            <img class="card-slide w-full h-full object-cover opacity-100 transition-opacity duration-500" src="assets/miniaturas-1.jpg" alt="Miniaturas — foto 1">
-            <img class="card-slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-500" src="assets/miniaturas-2.jpg" alt="Miniaturas — foto 2">
-            <img class="card-slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-500" src="assets/miniaturas-3.jpg" alt="Miniaturas — foto 3">
+          <div class="relative ar-4-3 bg-neutral-800 overflow-hidden" data-carousel="card">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500" src="assets/miniaturas-1.jpg" alt="Miniaturas — foto 1">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="assets/miniaturas-2.jpg" alt="Miniaturas — foto 2">
+            <img class="card-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="assets/miniaturas-3.jpg" alt="Miniaturas — foto 3">
             <button class="card-prev absolute left-2 top-1/2 -translate-y-1/2 bg-neutral-900/70 hover:bg-neutral-900/90 border border-white/10 rounded-full w-8 h-8">‹</button>
             <button class="card-next absolute right-2 top-1/2 -translate-y-1/2 bg-neutral-900/70 hover:bg-neutral-900/90 border border-white/10 rounded-full w-8 h-8">›</button>
             <div class="card-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2"></div>
@@ -243,53 +247,46 @@
     // ano footer
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // --- Carrossel do HERO ---
+    // --- Carrossel do HERO (crossfade, sem mexer em position) ---
     (function () {
-  const slides = Array.from(document.querySelectorAll('#carousel .carousel-slide'));
-  if (!slides.length) return;
+      const slides = Array.from(document.querySelectorAll('#carousel .carousel-slide'));
+      if (!slides.length) return;
+      const prev = document.getElementById('prevBtn');
+      const next = document.getElementById('nextBtn');
+      const dotsWrap = document.getElementById('dots');
+      let idx = 0;
 
-  const prev = document.getElementById('prevBtn');
-  const next = document.getElementById('nextBtn');
-  const dotsWrap = document.getElementById('dots');
+      function render() {
+        slides.forEach((img, i) => { img.style.opacity = i === idx ? '1' : '0'; });
+        dotsWrap.querySelectorAll('button').forEach((b, i) => {
+          b.classList.toggle('opacity-100', i === idx);
+          b.classList.toggle('opacity-40', i !== idx);
+        });
+      }
 
-  let idx = 0;
+      // dots
+      slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.className = 'w-2.5 h-2.5 rounded-full bg-white transition-opacity ' + (i===0?'opacity-100':'opacity-40');
+        b.addEventListener('click', () => { idx = i; render(); });
+        dotsWrap.appendChild(b);
+      });
 
-  function render() {
-    slides.forEach((img, i) => {
-      img.style.opacity = i === idx ? '1' : '0';
-      // não mexa em 'position' aqui
-    });
-    dotsWrap.querySelectorAll('button').forEach((b, i) => {
-      b.classList.toggle('opacity-100', i === idx);
-      b.classList.toggle('opacity-40', i !== idx);
-    });
-  }
+      // navegação
+      prev.addEventListener('click', () => { idx = (idx - 1 + slides.length) % slides.length; render(); });
+      next.addEventListener('click', () => { idx = (idx + 1) % slides.length; render(); });
 
-  // criar dots
-  slides.forEach((_, i) => {
-    const b = document.createElement('button');
-    b.className = 'w-2.5 h-2.5 rounded-full bg-white transition-opacity ' + (i===0?'opacity-100':'opacity-40');
-    b.addEventListener('click', () => { idx = i; render(); });
-    dotsWrap.appendChild(b);
-  });
+      // autoplay
+      let timer = setInterval(() => { idx = (idx + 1) % slides.length; render(); }, 4000);
+      [prev, next, dotsWrap].forEach(el => {
+        el.addEventListener('mouseenter', () => clearInterval(timer));
+        el.addEventListener('mouseleave', () => { timer = setInterval(() => { idx = (idx + 1) % slides.length; render(); }, 4000); });
+      });
 
-  // navegação
-  prev.addEventListener('click', () => { idx = (idx - 1 + slides.length) % slides.length; render(); });
-  next.addEventListener('click', () => { idx = (idx + 1) % slides.length; render(); });
+      render();
+    })();
 
-  // autoplay
-  let timer = setInterval(() => { idx = (idx + 1) % slides.length; render(); }, 4000);
-  [prev, next, dotsWrap].forEach(el => {
-    el.addEventListener('mouseenter', () => clearInterval(timer));
-    el.addEventListener('mouseleave', () => {
-      timer = setInterval(() => { idx = (idx + 1) % slides.length; render(); }, 4000);
-    });
-  });
-
-  render();
-})();
-
-    // --- Carrossel por CARD ---
+    // --- Carrossel por CARD (crossfade) ---
     function initCardCarousel(root) {
       const slides = Array.from(root.querySelectorAll('.card-slide'));
       const prev = root.querySelector('.card-prev');
@@ -298,16 +295,14 @@
       let idx = 0;
 
       function render() {
-        slides.forEach((img, i) => {
-          img.style.opacity = i === idx ? '1' : '0';
-          img.style.position = i === 0 ? (idx === 0 ? 'relative' : 'absolute') : 'absolute';
-        });
+        slides.forEach((img, i) => { img.style.opacity = i === idx ? '1' : '0'; });
         dotsWrap.querySelectorAll('button').forEach((b, i) => {
           b.classList.toggle('opacity-100', i === idx);
           b.classList.toggle('opacity-40', i !== idx);
         });
       }
 
+      // dots
       slides.forEach((_, i) => {
         const b = document.createElement('button');
         b.className = 'w-2.5 h-2.5 rounded-full bg-white transition-opacity ' + (i===0?'opacity-100':'opacity-40');
@@ -315,13 +310,17 @@
         dotsWrap.appendChild(b);
       });
 
+      // navegação
       prev.addEventListener('click', () => { idx = (idx - 1 + slides.length) % slides.length; render(); });
       next.addEventListener('click', () => { idx = (idx + 1) % slides.length; render(); });
 
+      // autoplay por card
       let timer = setInterval(() => { idx = (idx + 1) % slides.length; render(); }, 4500);
       [root, prev, next, dotsWrap].forEach(el => {
         el.addEventListener('mouseenter', () => clearInterval(timer));
-        el.addEventListener('mouseleave', () => { timer = setInterval(() => { idx = (idx + 1) % slides.length; render(); }, 4500); });
+        el.addEventListener('mouseleave', () => {
+          timer = setInterval(() => { idx = (idx + 1) % slides.length; render(); }, 4500);
+        });
       });
 
       render();
